@@ -1,0 +1,31 @@
+<div class="container">
+    <h1 class="title">QUẢN LÝ SẢN PHẨM</h1>
+    <a routerLink="add" class="btn btn-success">Thêm sản phẩm</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Image</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="productData && productData.length">
+            <tr *ngFor="let item of productData, index as i">
+                <th scope="row">{{i + 1}}</th>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td><img style="width: 100px;" src={{item.img}} alt=""></td>
+                <td>
+                    <button class="btn btn-danger" (click)="Delete(item.id)">
+                        Remove
+                    </button>
+                    <button class="btn btn-success">
+                        <a routerLink="edit/{{item.id}}">Edit</a>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

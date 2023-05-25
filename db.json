@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "name": " Áo Phông Trẻ Em Cotton Organic Mát Mịn In Ngực",
+      "price": 200,
+      "img": "https://res.cloudinary.com/dv3vzmogk/image/upload/v1666142436/anhhtus/%C4%90%E1%BB%81%20thi/sm-s908_galaxys22ultra_front_burgundy_211119_1_mccaah.jpg",
+      "id": 5
+    },
+    {
+      "name": "M03 | ÁO POLO BT – B089NIS-FK1DATRA",
+      "price": 400,
+      "img": "https://res.cloudinary.com/dv3vzmogk/image/upload/v1666142436/anhhtus/%C4%90%E1%BB%81%20thi/sm-s908_galaxys22ultra_front_burgundy_211119_1_mccaah.jpg",
+      "id": 6
+    }
+  ]
+}

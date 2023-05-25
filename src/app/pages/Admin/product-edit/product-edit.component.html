@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 class="title">UPDATE SẢN PHẨM</h1>
+    <form (ngSubmit)="Edit()">
+        <div class="mb-3">
+            <label for="exampleInputName" class="form-label">Name</label>
+            <input type="text" class="form-control" [(ngModel)]="product.name" name="name" id="exampleInputName"
+                aria-describedby="name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPrice" class="form-label">Price</label>
+            <input type="number" class="form-control" [(ngModel)]="product.price" name="price" id="exampleInputPrice"
+                aria-describedby="price">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputImage" class="form-label">Image</label>
+            <input type="text" class="form-control" [(ngModel)]="product.img" name="img" id="exampleInputImage"
+                aria-describedby="image">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

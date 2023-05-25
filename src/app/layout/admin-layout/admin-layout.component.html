@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="" style="display: grid; grid-template-columns: 200px auto;">
+        <nav class=" bg-success" style="display: flex; justify-content: center; padding: 20px;">
+            <div class="">
+                <a class="navbar-brand"
+                    style="color: #ffffff; display: block; font-weight: bold; border-bottom: 2px solid #ffffff; padding-bottom: 5px;"
+                    routerLink="dashboard">DASHBOARD</a><br>
+                <a class="navbar-brand"
+                    style="color: #ffffff; display: block; font-weight: bold; border-bottom: 2px solid #ffffff; padding-bottom: 5px;"
+                    routerLink="product">PRODUCT MANAGER</a>
+                <a class="navbar-brand"
+                    style="color: #ffffff; display: block; font-weight: bold; border-bottom: 2px solid #ffffff; padding-bottom: 5px;"
+                    routerLink="">HOME PAGE</a>
+            </div>
+        </nav>
+        <div class="content">
+            <router-outlet />
+        </div>
+    </div>
+</div>

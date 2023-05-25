@@ -1,0 +1,14 @@
+<div class="contaiter">
+    <div *ngIf="productData && productData.length">
+        <h1 class="title">List Product</h1>
+        <div class="box-item" *ngFor="let item of productData">
+            <div class="item">
+                <h4>{{item.name}}</h4>
+                <a routerLink="{{item.id}}">
+                    <img src={{item.img}} alt="">
+                </a>
+                <p>{{item.price}}</p>
+            </div>
+        </div>
+    </div>
+</div>
