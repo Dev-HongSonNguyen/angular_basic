@@ -1,1 +1,63 @@
-<p>home-page works!</p>
+<!-- Carousel wrapper -->
+<div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark" data-mdb-ride="carousel">
+    <!-- Inner -->
+    <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active" style="position: relative;">
+            <img src="https://demo.ishithemes.com/prestashop/PRS100/PRS100L04/modules/ishislider/views/img/slide-1.png"
+                class="d-block w-100" alt="Motorbike Smoke" />
+            <div class="carousel-caption animationTop" style="position: absolute; right: -30%; top: 25%;">
+                <span>Fabulous</span>
+                <h5>スマートウォッチ <br> シルバーロイヤル</h5>
+                <p>エリート・リベロ、ファレトラ・オーグ・モリス・インターダム。</p>
+                <a href="">今すぐ購入</a>
+            </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item active" style="position: relative;">
+            <img src="https://demo.ishithemes.com/prestashop/PRS100/PRS100L04/modules/ishislider/views/img/slide-2.png"
+                class="d-block w-100" alt="Mountaintop" />
+            <div class="carousel-caption animationTop" style="position: absolute; left: -30%; top: 25%;">
+                <span>Fabulous</span>
+                <h5>スマートウォ <br> ッチシリーズ6</h5>
+                <p>エリート・リベロ、ファレトラ・オーグ・モリス・インターダム。</p>
+                <a href="">今すぐ購入</a>
+            </div>
+        </div>
+    </div>
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- Carousel wrapper -->
+<section class="componentProductList">
+    <p class="componentProductList-sub-title">THE LATEST</p>
+    <h2 class="componentProductList-title">Fabulous Products</h2>
+    <div class="componentProductList-elem">
+        <div class="componentProductList-elem-item" *ngFor="let item of product">
+            <div class="componentProductList-elem-item-img">
+                <a href="">
+                    <img src={{item.img}} alt="">
+                </a>
+            </div>
+            <div class="componentProductList-elem-item-cart">
+                <a href="">ADD TO CART</a>
+            </div>
+            <div class="componentProductList-elem-item-name">
+                <a href="">{{item.name}}</a>
+            </div>
+            <div class="componentProductList-elem-item-price">
+                <p><span>$</span>{{item.price}}</p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -11,7 +11,7 @@ import { ProductPageComponent } from './pages/Base/product-page/product-page.com
 import { ContactPageComponent } from './pages/Base/contact-page/contact-page.component';
 import { DashboardPageComponent } from './pages/Admin/dashboard-page/dashboard-page.component';
 import { ProductCreateComponent } from './pages/Admin/product-create/product-create.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductDetailComponent } from './pages/Base/product-detail/product-detail.component';
 import { ProductEditComponent } from './pages/Admin/product-edit/product-edit.component';
 import { ProductListComponent } from './pages/Admin/product-list/product-list.component';
@@ -35,7 +35,8 @@ import { ProductListComponent } from './pages/Admin/product-list/product-list.co
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
