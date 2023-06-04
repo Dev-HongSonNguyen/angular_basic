@@ -1,0 +1,110 @@
+@keyframes showTop {
+  from {
+    opacity: 0;
+    transform: translate(0, -100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.animationTop {
+  animation: showTop 1.5s ease-in-out 1 forwards;
+}
+.carousel-caption {
+  color: #ffffff;
+}
+.carousel-caption span {
+  color: #bb3239;
+  font-weight: bold;
+  font-size: 34px;
+}
+.carousel-caption h5 {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+.carousel-caption a {
+  background-color: #bb3239;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+}
+.componentProductList {
+  background-color: #ffffff;
+  padding: 50px 0px;
+}
+.componentProductList-sub-title {
+  color: #bb3239;
+  font-weight: 500;
+  letter-spacing: 8px;
+  line-height: 17.5px;
+  margin: 0px 0px 12px;
+  text-align: center;
+}
+.componentProductList-title {
+  color: #232323;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0px 0px 25px;
+  padding: 0px 0px 25px;
+  text-align: center;
+  position: relative;
+}
+.componentProductList-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  width: 80px;
+  height: 4px;
+  background: #bb3239;
+}
+.componentProductList-elem {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.componentProductList-elem-item {
+  background-color: #f6f7fb;
+}
+.componentProductList-elem-item-img,
+.componentProductList-elem-item-price,
+.componentProductList-elem-item-cart,
+.componentProductList-elem-item-name {
+  text-align: center;
+}
+.componentProductList-elem-item-img img {
+  width: 100%;
+}
+.componentProductList-elem-item-cart a {
+  background-color: #bb3239;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+}
+.componentProductList-elem-item-name {
+  padding: 10px 0px;
+}
+.componentProductList-elem-item-name a {
+  text-decoration: none;
+  color: #232323;
+  font-weight: bold;
+}
+.componentProductList-elem-item-price p {
+  color: #bb3239;
+  font-weight: bold;
+}

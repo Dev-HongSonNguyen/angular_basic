@@ -19,7 +19,7 @@ export class ProductListComponent {
   }
   // Xoa san pham
   Delete(id: number){
-    if(confirm("Bạn có chắc chắn muốn xóa không !")){
+    if(confirm("Bạn có chắc chắn muốn xóa !")){
       this.productService.deleteProduct(id).subscribe(()=>{
         this.productData = this.productData.filter((item: any)=> item.id !== id)
       })

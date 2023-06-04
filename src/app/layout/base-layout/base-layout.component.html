@@ -1,14 +1,69 @@
-<div class="container">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success">
-        <div class="">
-            <a class="navbar-brand text-light" routerLink="">Home</a>
-            <a class="navbar-brand text-light" routerLink="about">About</a>
-            <a class="navbar-brand text-light" routerLink="product">Product</a>
-            <a class="navbar-brand text-light" routerLink="contact">Navbar</a>
-            <a class="navbar-brand text-light" routerLink="admin">Admin</a>
+<header>
+    <div class="header-top">
+        <div class="header-top-elem">
+            <div class="header-top-elem-right">
+                <div class="header-top-elem-right-item">
+                    <span>Email: </span>
+                    <p>info@gmail.com</p>
+                </div>
+                <div class="header-top-elem-right-item">
+                    <span>Today's Deal: </span>
+                    <p>Sale Off 50%</p>
+                </div>
+            </div>
+            <div class="header-top-elem-left">
+                <!-- <div class="header-top-elem-left-item">
+                    <p>Usa $</p>
+                </div> -->
+                <div class="header-top-elem-left-item">
+                    <p>English/Japan</p>
+                </div>
+            </div>
         </div>
-    </nav>
-    <div class="content">
-        <router-outlet />
     </div>
-</div>
+    <div class="header-main">
+        <div class="header-main-elem">
+            <div class="header-main-elem-item">
+                <div class="header-main-elem-item-logo">
+                    <a href="">
+                        <img src="https://demo.ishithemes.com/prestashop/PRS100/PRS100L04/img/demo-shop-logo-1630146264.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="header-main-elem-item-nav">
+                    <ul>
+                        <li><a href="">スマートウォッチ</a></li>
+                        <li><a href="">コレクション</a></li>
+                        <li><a href="">アクセサリー</a></li>
+                        <li><a href="">デリ</a></li>
+                        <li><a href="">しては</a></li>
+                        <!-- <li><a href="">Smart Watch</a></li>
+                        <li><a href="">Collection</a></li>
+                        <li><a href="">Acessories</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="">About Us</a></li> -->
+                    </ul>
+                </div>
+                <div class="header-main-elem-item-icon">
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<router-outlet />
+<!-- <div class="">
+    <a class="navbar-brand text-light" routerLink="">Home</a>
+    <a class="navbar-brand text-light" routerLink="about">About</a>
+    <a class="navbar-brand text-light" routerLink="product">Product</a>
+    <a class="navbar-brand text-light" routerLink="contact">Navbar</a>
+    <a class="navbar-brand text-light" routerLink="admin">Admin</a>
+</div> -->
